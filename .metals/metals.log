@@ -1,0 +1,916 @@
+2020.10.20 16:54:48 INFO  started: Metals version 0.9.4 in workspace '/Users/ronenkonfortes/workspace/konfortes/hello-akka' for client vscode.
+2020.10.20 16:54:49 INFO  time: initialize in 0.32s
+2020.10.20 16:55:42 INFO  no build target: using presentation compiler with only scala-library
+2020.10.20 16:56:44 INFO  skipping build import with status 'Requested'
+Exception in thread "pool-1-thread-10" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionCancelChecker.isCancelled(MtagsEnrichments.scala:152)
+	at scala.meta.internal.metals.FormattingProvider.$anonfun$isCancelled$1(FormattingProvider.scala:63)
+	at scala.meta.internal.metals.FormattingProvider.$anonfun$isCancelled$1$adapted(FormattingProvider.scala:63)
+	at scala.Option.exists(Option.scala:376)
+	at scala.meta.internal.metals.FormattingProvider.isCancelled(FormattingProvider.scala:63)
+	at scala.meta.internal.metals.FormattingProvider.$anonfun$handleMissingFile$1(FormattingProvider.scala:204)
+	at scala.meta.internal.metals.FormattingProvider.$anonfun$handleMissingFile$1$adapted(FormattingProvider.scala:197)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2020.10.20 16:57:12 INFO  skipping build import with status 'Requested'
+2020.10.20 16:59:54 INFO  skipping build import with status 'Dismissed'
+2020.10.20 17:00:05 INFO  running '/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/metals5036955943246313350/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2020.10.20 17:00:06 INFO  skipping build import with status 'Dismissed'
+2020.10.20 17:00:11 INFO  [info] Loading global plugins from /Users/ronenkonfortes/.sbt/1.0/plugins
+2020.10.20 17:00:15 INFO  [info] Loading settings for project hello-akka-build-build from metals.sbt ...
+2020.10.20 17:00:15 INFO  [info] Loading project definition from /Users/ronenkonfortes/workspace/konfortes/hello-akka/project/project
+2020.10.20 17:00:16 INFO  [info] Loading settings for project hello-akka-build from metals.sbt ...
+2020.10.20 17:00:16 INFO  [info] Loading project definition from /Users/ronenkonfortes/workspace/konfortes/hello-akka/project
+2020.10.20 17:00:20 INFO  [success] Generated .bloop/hello-akka-build.json
+2020.10.20 17:00:20 INFO  [success] Total time: 3 s, completed Oct 20, 2020 5:00:20 PM
+2020.10.20 17:00:21 INFO  [info] Loading settings for project hello-akka from build.sbt ...
+2020.10.20 17:00:21 INFO  [info] Set current project to hello-world (in build file:/Users/ronenkonfortes/workspace/konfortes/hello-akka/)
+2020.10.20 17:00:21 INFO  [warn] 
+2020.10.20 17:00:21 INFO  [warn] 	Note: Unresolved dependencies path:
+2020.10.20 17:00:21 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading com.typesafe.akka:akka-testkit_2.13:2.15.13
+2020.10.20 17:00:21 INFO  [error]   Not found
+2020.10.20 17:00:21 INFO  [error]   Not found
+2020.10.20 17:00:21 INFO  [error]   not found: /Users/ronenkonfortes/.ivy2/local/com.typesafe.akka/akka-testkit_2.13/2.15.13/ivys/ivy.xml
+2020.10.20 17:00:21 INFO  [error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.13/2.15.13/akka-testkit_2.13-2.15.13.pom
+2020.10.20 17:00:21 INFO  [error] Error downloading com.typesafe.akka:akka-actor_2.13:2.15.13
+2020.10.20 17:00:22 INFO  [error]   Not found
+2020.10.20 17:00:22 INFO  [error]   Not found
+2020.10.20 17:00:22 INFO  [error]   not found: /Users/ronenkonfortes/.ivy2/local/com.typesafe.akka/akka-actor_2.13/2.15.13/ivys/ivy.xml
+2020.10.20 17:00:22 INFO  [error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.15.13/akka-actor_2.13-2.15.13.pom
+2020.10.20 17:00:22 INFO  [error] Error downloading org.scalatest:scalatest_2.13:3.0.5
+2020.10.20 17:00:22 INFO  [error]   Not found
+2020.10.20 17:00:22 INFO  [error]   Not found
+2020.10.20 17:00:22 INFO  [error]   not found: /Users/ronenkonfortes/.ivy2/local/org.scalatest/scalatest_2.13/3.0.5/ivys/ivy.xml
+2020.10.20 17:00:22 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.0.5/scalatest_2.13-3.0.5.pom
+2020.10.20 17:00:22 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:245)
+2020.10.20 17:00:22 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$34(CoursierDependencyResolution.scala:214)
+2020.10.20 17:00:22 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)
+2020.10.20 17:00:22 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:214)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:52)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:102)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:69)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:115)
+2020.10.20 17:00:22 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:115)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:96)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:150)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:129)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$5(Defaults.scala:2942)
+2020.10.20 17:00:22 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:67)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:280)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:19)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.Execute.work(Execute.scala:289)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:280)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)
+2020.10.20 17:00:22 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)
+2020.10.20 17:00:22 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2020.10.20 17:00:22 INFO  [error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+2020.10.20 17:00:22 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2020.10.20 17:00:22 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+2020.10.20 17:00:22 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+2020.10.20 17:00:22 INFO  [error] 	at java.lang.Thread.run(Thread.java:748)
+2020.10.20 17:00:22 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading com.typesafe.akka:akka-testkit_2.13:2.15.13
+2020.10.20 17:00:22 INFO  [error]   Not found
+2020.10.20 17:00:22 INFO  [error]   Not found
+2020.10.20 17:00:22 INFO  [error]   not found: /Users/ronenkonfortes/.ivy2/local/com.typesafe.akka/akka-testkit_2.13/2.15.13/ivys/ivy.xml
+2020.10.20 17:00:22 INFO  [error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.13/2.15.13/akka-testkit_2.13-2.15.13.pom
+2020.10.20 17:00:22 INFO  [error] Error downloading com.typesafe.akka:akka-actor_2.13:2.15.13
+2020.10.20 17:00:22 INFO  [error]   Not found
+2020.10.20 17:00:22 INFO  [error]   Not found
+2020.10.20 17:00:22 INFO  [error]   not found: /Users/ronenkonfortes/.ivy2/local/com.typesafe.akka/akka-actor_2.13/2.15.13/ivys/ivy.xml
+2020.10.20 17:00:22 INFO  [error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.15.13/akka-actor_2.13-2.15.13.pom
+2020.10.20 17:00:22 INFO  [error] Error downloading org.scalatest:scalatest_2.13:3.0.5
+2020.10.20 17:00:22 INFO  [error]   Not found
+2020.10.20 17:00:22 INFO  [error]   Not found
+2020.10.20 17:00:22 INFO  [error]   not found: /Users/ronenkonfortes/.ivy2/local/org.scalatest/scalatest_2.13/3.0.5/ivys/ivy.xml
+2020.10.20 17:00:22 INFO  [error]   not found: https://repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.0.5/scalatest_2.13-3.0.5.pom
+2020.10.20 17:00:22 INFO  [error] Total time: 1 s, completed Oct 20, 2020 5:00:22 PM
+2020.10.20 17:00:22 INFO  build tool exit: 1
+2020.10.20 17:00:22 INFO  time: ran 'sbt bloopInstall' in 16s
+2020.10.20 17:00:22 ERROR sbt command failed: /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/metals5036955943246313350/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+2020.10.20 17:02:59 INFO  running '/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/metals5922153485795373565/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2020.10.20 17:03:04 INFO  [info] Loading global plugins from /Users/ronenkonfortes/.sbt/1.0/plugins
+2020.10.20 17:03:05 INFO  [info] Loading settings for project hello-akka-build-build from metals.sbt ...
+2020.10.20 17:03:05 INFO  [info] Loading project definition from /Users/ronenkonfortes/workspace/konfortes/hello-akka/project/project
+2020.10.20 17:03:05 INFO  [info] Loading settings for project hello-akka-build from metals.sbt ...
+2020.10.20 17:03:05 INFO  [info] Loading project definition from /Users/ronenkonfortes/workspace/konfortes/hello-akka/project
+2020.10.20 17:03:08 INFO  [success] Generated .bloop/hello-akka-build.json
+2020.10.20 17:03:08 INFO  [success] Total time: 2 s, completed Oct 20, 2020 5:03:08 PM
+2020.10.20 17:03:10 INFO  [info] Loading settings for project hello-akka from build.sbt ...
+2020.10.20 17:03:10 INFO  [info] Set current project to hello-world (in build file:/Users/ronenkonfortes/workspace/konfortes/hello-akka/)
+2020.10.20 17:03:11 INFO  [warn] 
+2020.10.20 17:03:11 INFO  [warn] 	Note: Unresolved dependencies path:
+2020.10.20 17:03:11 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading com.typesafe.akka:akka-testkit_2.13:2.15.13
+2020.10.20 17:03:11 INFO  [error]   Not found
+2020.10.20 17:03:11 INFO  [error]   Not found
+2020.10.20 17:03:11 INFO  [error]   not found: /Users/ronenkonfortes/.ivy2/local/com.typesafe.akka/akka-testkit_2.13/2.15.13/ivys/ivy.xml
+2020.10.20 17:03:11 INFO  [error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.13/2.15.13/akka-testkit_2.13-2.15.13.pom
+2020.10.20 17:03:11 INFO  [error] Error downloading com.typesafe.akka:akka-actor_2.13:2.15.13
+2020.10.20 17:03:11 INFO  [error]   Not found
+2020.10.20 17:03:11 INFO  [error]   Not found
+2020.10.20 17:03:11 INFO  [error]   not found: /Users/ronenkonfortes/.ivy2/local/com.typesafe.akka/akka-actor_2.13/2.15.13/ivys/ivy.xml
+2020.10.20 17:03:11 INFO  [error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.15.13/akka-actor_2.13-2.15.13.pom
+2020.10.20 17:03:11 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:245)
+2020.10.20 17:03:11 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$34(CoursierDependencyResolution.scala:214)
+2020.10.20 17:03:11 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)
+2020.10.20 17:03:11 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:214)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:52)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:102)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:69)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:115)
+2020.10.20 17:03:11 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:115)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:96)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:150)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:129)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$5(Defaults.scala:2942)
+2020.10.20 17:03:11 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:67)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:280)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:19)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.Execute.work(Execute.scala:289)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:280)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)
+2020.10.20 17:03:11 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)
+2020.10.20 17:03:11 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2020.10.20 17:03:11 INFO  [error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+2020.10.20 17:03:11 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2020.10.20 17:03:11 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+2020.10.20 17:03:11 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+2020.10.20 17:03:11 INFO  [error] 	at java.lang.Thread.run(Thread.java:748)
+2020.10.20 17:03:11 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading com.typesafe.akka:akka-testkit_2.13:2.15.13
+2020.10.20 17:03:11 INFO  [error]   Not found
+2020.10.20 17:03:11 INFO  [error]   Not found
+2020.10.20 17:03:11 INFO  [error]   not found: /Users/ronenkonfortes/.ivy2/local/com.typesafe.akka/akka-testkit_2.13/2.15.13/ivys/ivy.xml
+2020.10.20 17:03:11 INFO  [error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.13/2.15.13/akka-testkit_2.13-2.15.13.pom
+2020.10.20 17:03:11 INFO  [error] Error downloading com.typesafe.akka:akka-actor_2.13:2.15.13
+2020.10.20 17:03:11 INFO  [error]   Not found
+2020.10.20 17:03:11 INFO  [error]   Not found
+2020.10.20 17:03:11 INFO  [error]   not found: /Users/ronenkonfortes/.ivy2/local/com.typesafe.akka/akka-actor_2.13/2.15.13/ivys/ivy.xml
+2020.10.20 17:03:11 INFO  [error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.15.13/akka-actor_2.13-2.15.13.pom
+2020.10.20 17:03:11 INFO  [error] Total time: 1 s, completed Oct 20, 2020 5:03:11 PM
+2020.10.20 17:03:11 INFO  build tool exit: 1
+2020.10.20 17:03:11 INFO  time: ran 'sbt bloopInstall' in 12s
+2020.10.20 17:03:11 ERROR sbt command failed: /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/metals5922153485795373565/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+2020.10.20 17:03:54 WARN  code navigation does not work for the file '/Users/ronenkonfortes/workspace/konfortes/hello-akka/build.sbt' because it doesn't belong to a build target.
+2020.10.20 17:03:54 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/build.sbt:12: error: ) expected but string constant found
+  "org.scalatest" %% "scalatest" % "3.0.5"
+  ^
+2020.10.20 17:03:55 INFO  skipping build import with status 'Dismissed'
+2020.10.20 17:03:58 INFO  skipping build import with status 'Dismissed'
+2020.10.20 17:04:04 INFO  running '/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/metals1205566265667985185/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2020.10.20 17:04:09 INFO  [info] Loading global plugins from /Users/ronenkonfortes/.sbt/1.0/plugins
+2020.10.20 17:04:10 INFO  [info] Loading settings for project hello-akka-build-build from metals.sbt ...
+2020.10.20 17:04:10 INFO  [info] Loading project definition from /Users/ronenkonfortes/workspace/konfortes/hello-akka/project/project
+2020.10.20 17:04:10 INFO  [info] Loading settings for project hello-akka-build from metals.sbt ...
+2020.10.20 17:04:10 INFO  [info] Loading project definition from /Users/ronenkonfortes/workspace/konfortes/hello-akka/project
+2020.10.20 17:04:12 INFO  [success] Generated .bloop/hello-akka-build.json
+2020.10.20 17:04:12 INFO  [success] Total time: 1 s, completed Oct 20, 2020 5:04:12 PM
+2020.10.20 17:04:14 INFO  [info] Loading settings for project hello-akka from build.sbt ...
+2020.10.20 17:04:14 INFO  [info] Set current project to hello-world (in build file:/Users/ronenkonfortes/workspace/konfortes/hello-akka/)
+2020.10.20 17:04:16 INFO  [warn] 
+2020.10.20 17:04:16 INFO  [warn] 	Note: Unresolved dependencies path:
+2020.10.20 17:04:16 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading com.typesafe.akka:akka-actor_2.12:2.15.13
+2020.10.20 17:04:16 INFO  [error]   Not found
+2020.10.20 17:04:16 INFO  [error]   Not found
+2020.10.20 17:04:16 INFO  [error]   not found: /Users/ronenkonfortes/.ivy2/local/com.typesafe.akka/akka-actor_2.12/2.15.13/ivys/ivy.xml
+2020.10.20 17:04:16 INFO  [error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.15.13/akka-actor_2.12-2.15.13.pom
+2020.10.20 17:04:16 INFO  [error] Error downloading com.typesafe.akka:akka-testkit_2.12:2.15.13
+2020.10.20 17:04:16 INFO  [error]   Not found
+2020.10.20 17:04:16 INFO  [error]   Not found
+2020.10.20 17:04:16 INFO  [error]   not found: /Users/ronenkonfortes/.ivy2/local/com.typesafe.akka/akka-testkit_2.12/2.15.13/ivys/ivy.xml
+2020.10.20 17:04:16 INFO  [error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.12/2.15.13/akka-testkit_2.12-2.15.13.pom
+2020.10.20 17:04:16 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:245)
+2020.10.20 17:04:16 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$34(CoursierDependencyResolution.scala:214)
+2020.10.20 17:04:16 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)
+2020.10.20 17:04:16 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:214)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:52)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:102)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:69)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:115)
+2020.10.20 17:04:16 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:115)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:96)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:150)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:129)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$5(Defaults.scala:2942)
+2020.10.20 17:04:16 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:67)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:280)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:19)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.Execute.work(Execute.scala:289)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:280)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)
+2020.10.20 17:04:16 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)
+2020.10.20 17:04:16 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2020.10.20 17:04:16 INFO  [error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+2020.10.20 17:04:16 INFO  [error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2020.10.20 17:04:16 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+2020.10.20 17:04:16 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+2020.10.20 17:04:16 INFO  [error] 	at java.lang.Thread.run(Thread.java:748)
+2020.10.20 17:04:16 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading com.typesafe.akka:akka-actor_2.12:2.15.13
+2020.10.20 17:04:16 INFO  [error]   Not found
+2020.10.20 17:04:16 INFO  [error]   Not found
+2020.10.20 17:04:16 INFO  [error]   not found: /Users/ronenkonfortes/.ivy2/local/com.typesafe.akka/akka-actor_2.12/2.15.13/ivys/ivy.xml
+2020.10.20 17:04:16 INFO  [error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.15.13/akka-actor_2.12-2.15.13.pom
+2020.10.20 17:04:16 INFO  [error] Error downloading com.typesafe.akka:akka-testkit_2.12:2.15.13
+2020.10.20 17:04:16 INFO  [error]   Not found
+2020.10.20 17:04:16 INFO  [error]   Not found
+2020.10.20 17:04:16 INFO  [error]   not found: /Users/ronenkonfortes/.ivy2/local/com.typesafe.akka/akka-testkit_2.12/2.15.13/ivys/ivy.xml
+2020.10.20 17:04:16 INFO  [error]   not found: https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.12/2.15.13/akka-testkit_2.12-2.15.13.pom
+2020.10.20 17:04:16 INFO  [error] Total time: 1 s, completed Oct 20, 2020 5:04:16 PM
+2020.10.20 17:04:16 INFO  build tool exit: 1
+2020.10.20 17:04:16 INFO  time: ran 'sbt bloopInstall' in 11s
+2020.10.20 17:04:16 ERROR sbt command failed: /Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/metals1205566265667985185/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+2020.10.20 17:04:31 INFO  skipping build import with status 'Dismissed'
+2020.10.20 17:04:33 INFO  running '/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/metals3579648020314310969/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2020.10.20 17:04:38 INFO  [info] Loading global plugins from /Users/ronenkonfortes/.sbt/1.0/plugins
+2020.10.20 17:04:39 INFO  [info] Loading settings for project hello-akka-build-build from metals.sbt ...
+2020.10.20 17:04:39 INFO  [info] Loading project definition from /Users/ronenkonfortes/workspace/konfortes/hello-akka/project/project
+2020.10.20 17:04:39 INFO  [info] Loading settings for project hello-akka-build from metals.sbt ...
+2020.10.20 17:04:39 INFO  [info] Loading project definition from /Users/ronenkonfortes/workspace/konfortes/hello-akka/project
+2020.10.20 17:04:41 INFO  [success] Generated .bloop/hello-akka-build.json
+2020.10.20 17:04:41 INFO  [success] Total time: 1 s, completed Oct 20, 2020 5:04:41 PM
+2020.10.20 17:04:43 INFO  [info] Loading settings for project hello-akka from build.sbt ...
+2020.10.20 17:04:43 INFO  [info] Set current project to hello-world (in build file:/Users/ronenkonfortes/workspace/konfortes/hello-akka/)
+2020.10.20 17:04:56 INFO  [success] Generated .bloop/hello-akka-test.json
+2020.10.20 17:04:56 INFO  [success] Generated .bloop/hello-akka.json
+2020.10.20 17:04:56 INFO  [success] Total time: 12 s, completed Oct 20, 2020 5:04:56 PM
+2020.10.20 17:04:56 INFO  build tool exit: 0
+2020.10.20 17:04:56 INFO  time: ran 'sbt bloopInstall' in 22s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher530890742811214437/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading 2 projects from '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop/hello-akka.json'
+[0m[32m[D][0m Loading project from '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop/hello-akka-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.7.
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.6/jline-2.14.6.jar
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.7/scala-compiler-2.12.7.jar
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7.jar
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.7/scala-reflect-2.12.7.jar
+[0m[32m[D][0m Missing analysis file for project 'hello-akka'
+[0m[32m[D][0m Missing analysis file for project 'hello-akka-test'
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher530890742811214437/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher530890742811214437/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.20 17:04:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher471332526676778807/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher471332526676778807/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher471332526676778807/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.20 17:04:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.20 17:04:56 INFO  time: connected to build server in 0.61s
+2020.10.20 17:04:56 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.20 17:05:00 INFO  time: indexed workspace in 3.12s
+2020.10.20 17:05:10 INFO  running '/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/metals8964052358433929240/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2020.10.20 17:05:14 INFO  [info] Loading global plugins from /Users/ronenkonfortes/.sbt/1.0/plugins
+2020.10.20 17:05:15 INFO  [info] Loading settings for project hello-akka-build-build from metals.sbt ...
+2020.10.20 17:05:15 INFO  [info] Loading project definition from /Users/ronenkonfortes/workspace/konfortes/hello-akka/project/project
+2020.10.20 17:05:15 INFO  [info] Loading settings for project hello-akka-build from metals.sbt ...
+2020.10.20 17:05:15 INFO  [info] Loading project definition from /Users/ronenkonfortes/workspace/konfortes/hello-akka/project
+2020.10.20 17:05:18 INFO  [success] Generated .bloop/hello-akka-build.json
+2020.10.20 17:05:18 INFO  [success] Total time: 2 s, completed Oct 20, 2020 5:05:18 PM
+2020.10.20 17:05:19 INFO  [info] Loading settings for project hello-akka from build.sbt ...
+2020.10.20 17:05:19 INFO  [info] Set current project to hello-world (in build file:/Users/ronenkonfortes/workspace/konfortes/hello-akka/)
+2020.10.20 17:05:22 INFO  [success] Generated .bloop/hello-akka-test.json
+2020.10.20 17:05:22 INFO  [success] Generated .bloop/hello-akka.json
+2020.10.20 17:05:22 INFO  [success] Total time: 2 s, completed Oct 20, 2020 5:05:22 PM
+2020.10.20 17:05:22 INFO  build tool exit: 0
+2020.10.20 17:05:22 INFO  time: ran 'sbt bloopInstall' in 11s
+2020.10.20 17:05:22 INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher8020677829455464870/bsp.socket'...
+Waiting for the bsp connection to come up...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop/hello-akka-test.json'
+[0m[32m[D][0m Loading project from '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop/hello-akka.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.12.
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.6/jline-2.14.6.jar
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.12/jansi-1.12.jar
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.12/scala-compiler-2.12.12.jar
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.12/scala-library-2.12.12.jar
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.12/scala-reflect-2.12.12.jar
+[0m[32m[D][0m Resolving org.scalameta:semanticdb-scalac_2.12.12:4.3.22
+[0m[32m[D][0m Configured SemanticDB in projects 'hello-akka-test', 'hello-akka'
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher8020677829455464870/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher8020677829455464870/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.20 17:05:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher1981797910593946444/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher1981797910593946444/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher1981797910593946444/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.20 17:05:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.20 17:05:26 INFO  time: connected to build server in 4.31s
+2020.10.20 17:05:26 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.20 17:05:26 INFO  time: indexed workspace in 0.76s
+2020.10.20 17:06:14 INFO  compiling hello-akka (1 scala source)
+2020.10.20 17:06:29 ERROR IO error while decoding /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/Main.scala with UTF-8: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/Main.scala (No such file or directory)
+Please try specifying another one using the -encoding option
+2020.10.20 17:06:29 INFO  time: compiled hello-akka in 15s
+2020.10.20 17:06:40 INFO  compiling hello-akka (1 scala source)
+2020.10.20 17:06:41 ERROR code navigation does not work for the file '/Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/playground/Playground.scala' because the build target hello-akka is being compiled. Wait until compilation is finished and try again.
+2020.10.20 17:06:41 INFO  time: compiled hello-akka in 1.27s
+Oct 20, 2020 5:06:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 744
+Oct 20, 2020 5:06:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 746
+2020.10.20 17:07:39 INFO  compiling hello-akka (1 scala source)
+2020.10.20 17:07:41 INFO  time: compiled hello-akka in 1.19s
+2020.10.20 17:07:43 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2020.10.20 17:07:43 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2020.10.20 17:07:43 INFO  Starting debug proxy for [playground.Playground]
+2020.10.20 17:07:43 INFO  Listening for transport dt_socket at address: 50542
+2020.10.20 17:07:43 INFO  Trying to attach to remote debuggee VM localhost:50542 .
+2020.10.20 17:07:43 INFO  Attaching to debuggee VM succeeded.
+2020.10.20 17:07:53 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2020.10.20 17:07:53 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2020.10.20 17:07:53 INFO  Starting debug proxy for [playground.Playground]
+2020.10.20 17:07:53 INFO  Listening for transport dt_socket at address: 50553
+2020.10.20 17:07:53 INFO  Trying to attach to remote debuggee VM localhost:50553 .
+2020.10.20 17:07:53 INFO  Attaching to debuggee VM succeeded.
+2020.10.20 17:08:23 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2020.10.20 17:08:23 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2020.10.20 17:08:23 INFO  Starting debug proxy for [playground.Playground]
+2020.10.20 17:08:23 INFO  Listening for transport dt_socket at address: 50595
+2020.10.20 17:08:23 INFO  Trying to attach to remote debuggee VM localhost:50595 .
+2020.10.20 17:08:23 INFO  Attaching to debuggee VM succeeded.
+2020.10.20 17:08:27 ERROR [error response][evaluate]: an implementation is missing
+2020.10.20 17:08:29 ERROR [error response][evaluate]: an implementation is missing
+2020.10.20 17:08:40 ERROR [error response][evaluate]: an implementation is missing
+2020.10.20 17:08:53 ERROR [error response][evaluate]: an implementation is missing
+2020.10.20 17:08:55 ERROR [error response][evaluate]: an implementation is missing
+2020.10.20 17:08:56 ERROR [error response][evaluate]: an implementation is missing
+2020.10.20 17:08:58 ERROR [error response][evaluate]: an implementation is missing
+2020.10.20 17:08:59 INFO  Canceling debug proxy for [playground.Playground]
+2020.10.20 17:08:58 INFO  Listening for transport dt_socket at address: 50625
+2020.10.20 17:08:58 INFO  helloAkka
+2020.10.20 17:09:01 INFO  Canceling debug proxy for [playground.Playground]
+2020.10.20 17:09:01 INFO  helloAkkaListening for transport dt_socket at address: 50626
+2020.10.20 17:09:03 INFO  Canceling debug proxy for [playground.Playground]
+2020.10.20 17:09:03 INFO  helloAkkaListening for transport dt_socket at address: 50627
+2020.10.20 17:09:13 INFO  compiling hello-akka (1 scala source)
+2020.10.20 17:09:14 INFO  time: compiled hello-akka in 1.06s
+2020.10.20 17:09:22 INFO  compiling hello-akka (1 scala source)
+2020.10.20 17:09:24 INFO  time: compiled hello-akka in 1.48s
+2020.10.20 17:09:32 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2020.10.20 17:09:32 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2020.10.20 17:09:32 INFO  Starting debug proxy for [playground.Playground]
+2020.10.20 17:09:32 INFO  Listening for transport dt_socket at address: 50648
+2020.10.20 17:09:32 INFO  Trying to attach to remote debuggee VM localhost:50648 .
+2020.10.20 17:09:32 INFO  Attaching to debuggee VM succeeded.
+Oct 20, 2020 5:10:06 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Oct 20, 2020 5:10:10 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+2020.10.20 17:11:01 INFO  compiling hello-akka (1 scala source)
+2020.10.20 17:11:03 INFO  time: compiled hello-akka in 1.37s
+2020.10.20 17:11:44 INFO  compiling hello-akka (1 scala source)
+2020.10.20 17:11:44 INFO  time: compiled hello-akka in 0.71s
+2020.10.20 17:27:24 INFO  compiling hello-akka (1 scala source)
+2020.10.20 17:27:26 INFO  time: compiled hello-akka in 1.64s
+2020.10.20 17:31:02 INFO  compiling hello-akka (1 scala source)
+2020.10.20 17:31:03 INFO  time: compiled hello-akka in 1.19s
+2020.10.20 17:31:23 INFO  compiling hello-akka (1 scala source)
+2020.10.20 17:31:23 INFO  time: compiled hello-akka in 0.8s
+2020.10.20 17:31:32 INFO  compiling hello-akka (1 scala source)
+2020.10.20 17:31:32 INFO  time: compiled hello-akka in 0.82s
+2020.10.20 17:31:53 INFO  compiling hello-akka (2 scala sources)
+2020.10.20 17:31:55 INFO  time: compiled hello-akka in 1.19s
+2020.10.20 17:31:59 INFO  compiling hello-akka (1 scala source)
+2020.10.20 17:31:59 INFO  time: compiled hello-akka in 0.84s
+Oct 21, 2020 1:15:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1350
+2020.10.21 13:16:01 INFO  compiling hello-akka (1 scala source)
+2020.10.21 13:16:04 INFO  time: compiled hello-akka in 2.62s
+Oct 21, 2020 1:17:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1503
+Oct 21, 2020 1:17:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1506
+2020.10.21 13:17:19 INFO  compiling hello-akka (1 scala source)
+2020.10.21 13:17:19 INFO  time: compiled hello-akka in 0.38s
+2020.10.21 13:17:36 INFO  compiling hello-akka (1 scala source)
+2020.10.21 13:17:37 INFO  time: compiled hello-akka in 1.31s
+2020.10.21 13:17:50 INFO  compiling hello-akka (1 scala source)
+2020.10.21 13:17:50 INFO  Deduplicating compilation of hello-akka from bsp client 'Metals 0.9.4' (since 20h 12m 24.848s)
+2020.10.21 13:17:51 INFO  compiling hello-akka (1 scala source)
+2020.10.21 13:17:51 INFO  time: compiled hello-akka in 0.14s
+2020.10.21 13:17:52 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2020.10.21 13:17:52 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2020.10.21 13:17:52 INFO  Starting debug proxy for [actorsintro.ActorsIntro]
+2020.10.21 13:17:52 INFO  Listening for transport dt_socket at address: 63402
+2020.10.21 13:17:52 INFO  Trying to attach to remote debuggee VM localhost:63402 .
+2020.10.21 13:17:52 INFO  Attaching to debuggee VM succeeded.
+2020.10.21 13:17:54 INFO  firstActorSystem
+2020.10.21 13:18:09 INFO  Canceling debug proxy for [playground.Playground]
+2020.10.21 13:18:12 INFO  Canceling debug proxy for [actorsintro.ActorsIntro]
+2020.10.21 13:18:12 INFO  Listening for transport dt_socket at address: 63410
+2020.10.21 13:18:14 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/dap-server.trace.json
+2020.10.21 13:18:14 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/dap-client.trace.json
+2020.10.21 13:18:14 INFO  Starting debug proxy for [actorsintro.ActorsIntro]
+2020.10.21 13:18:14 INFO  Listening for transport dt_socket at address: 63416
+2020.10.21 13:18:14 INFO  Trying to attach to remote debuggee VM localhost:63416 .
+2020.10.21 13:18:14 INFO  Attaching to debuggee VM succeeded.
+2020.10.21 13:18:15 INFO  firstActorSystem
+2020.10.21 13:18:22 INFO  Canceling debug proxy for [actorsintro.ActorsIntro]
+2020.10.21 13:18:22 INFO  Listening for transport dt_socket at address: 63420
+2020.10.21 13:23:53 INFO  compiling hello-akka (1 scala source)
+2020.10.21 13:23:56 INFO  time: compiled hello-akka in 2.72s
+2020.10.21 13:26:02 INFO  compiling hello-akka (1 scala source)
+2020.10.21 13:26:04 INFO  time: compiled hello-akka in 2.01s
+2020.10.21 13:27:13 INFO  compiling hello-akka (1 scala source)
+Oct 21, 2020 1:27:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2762
+Oct 21, 2020 1:27:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2766
+2020.10.21 13:27:30 INFO  time: compiled hello-akka in 17s
+Oct 21, 2020 2:46:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3308
+Oct 21, 2020 2:46:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3316
+Oct 21, 2020 2:57:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3602
+2020.10.21 14:58:27 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/actorspart2/ActorCapabilities.scala:9: error: ; expected but def found
+      overrode def receive: Receive {
+               ^
+2020.10.21 15:05:04 INFO  disconnected: build server
+2020.10.21 15:05:04 INFO  helloAkka
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+2020.10.21 15:05:06 ERROR timeout: build server 'bloop' during shutdown
+2020.10.21 15:05:06 ERROR timeout: build server 'bloop' during shutdown
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher760420836282743032/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.4-13-408f4d80...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop/hello-akka-test.json'
+[0m[32m[D][0m Loading project from '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop/hello-akka.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.12.
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.6/jline-2.14.6.jar
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.12/jansi-1.12.jar
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.12/scala-compiler-2.12.12.jar
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.12/scala-library-2.12.12.jar
+[0m[32m[D][0m   => /Users/ronenkonfortes/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.12/scala-reflect-2.12.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'hello-akka-test', 'hello-akka'
+[0m[32m[D][0m Missing analysis file for project 'hello-akka-test'
+[0m[32m[D][0m Loading previous analysis for 'hello-akka' from '/Users/ronenkonfortes/workspace/konfortes/hello-akka/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher760420836282743032/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher760420836282743032/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.21 15:05:10 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher6050581518591443916/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher6050581518591443916/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher6050581518591443916/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.21 15:05:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.21 15:05:11 INFO  time: connected to build server in 4.9s
+2020.10.21 15:05:11 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.21 15:05:11 INFO  time: indexed workspace in 0.63s
+2020.10.21 15:05:23 INFO  Deduplicating compilation of hello-akka from bsp client 'Metals 0.9.4' (since 12.359s)
+2020.10.21 15:05:23 INFO  Deduplicating compilation of hello-akka from bsp client 'Metals 0.9.4' (since 12.359s)
+2020.10.21 15:05:23 INFO  compiling hello-akka (4 scala sources)
+2020.10.21 15:05:23 INFO  compiling hello-akka (4 scala sources)
+2020.10.21 15:05:23 INFO  compiling hello-akka (4 scala sources)
+2020.10.21 15:05:26 INFO  time: compiled hello-akka in 2.62s
+2020.10.21 15:05:50 ERROR code navigation does not work for the file '/Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/actorspart2/ActorCapabilities.scala' because the SemanticDB file '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop/hello-akka/bloop-bsp-clients-classes/classes-Metals-sM0QW8uzQASV5LA45zrcwg==/META-INF/semanticdb/src/main/scala/actorspart2/ActorCapabilities.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+2020.10.21 15:05:52 INFO  compiling hello-akka (4 scala sources)
+2020.10.21 15:05:52 INFO  time: compiled hello-akka in 0.41s
+2020.10.21 15:06:11 INFO  compiling hello-akka (4 scala sources)
+2020.10.21 15:06:11 INFO  time: compiled hello-akka in 0.29s
+2020.10.21 15:06:18 INFO  compiling hello-akka (4 scala sources)
+2020.10.21 15:06:18 INFO  time: compiled hello-akka in 0.26s
+2020.10.21 15:06:24 ERROR code navigation does not work for the file '/Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/actorspart2/ActorCapabilities.scala' because the SemanticDB file '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop/hello-akka/bloop-bsp-clients-classes/classes-Metals-sM0QW8uzQASV5LA45zrcwg==/META-INF/semanticdb/src/main/scala/actorspart2/ActorCapabilities.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+2020.10.21 15:06:24 ERROR code navigation does not work for the file '/Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/actorspart2/ActorCapabilities.scala' because the SemanticDB file '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop/hello-akka/bloop-bsp-clients-classes/classes-Metals-sM0QW8uzQASV5LA45zrcwg==/META-INF/semanticdb/src/main/scala/actorspart2/ActorCapabilities.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+2020.10.21 15:07:19 ERROR code navigation does not work for the file '/Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/actorspart2/ActorCapabilities.scala' because the SemanticDB file '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop/hello-akka/bloop-bsp-clients-classes/classes-Metals-sM0QW8uzQASV5LA45zrcwg==/META-INF/semanticdb/src/main/scala/actorspart2/ActorCapabilities.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+2020.10.21 15:07:19 ERROR code navigation does not work for the file '/Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/actorspart2/ActorCapabilities.scala' because the SemanticDB file '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop/hello-akka/bloop-bsp-clients-classes/classes-Metals-sM0QW8uzQASV5LA45zrcwg==/META-INF/semanticdb/src/main/scala/actorspart2/ActorCapabilities.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+2020.10.21 15:07:47 INFO  compiling hello-akka (4 scala sources)
+2020.10.21 15:07:50 INFO  time: compiled hello-akka in 2.86s
+2020.10.21 15:07:55 INFO  compiling hello-akka (4 scala sources)
+2020.10.21 15:07:56 INFO  time: compiled hello-akka in 1.29s
+2020.10.21 15:08:10 INFO  compiling hello-akka (1 scala source)
+2020.10.21 15:08:10 INFO  time: compiled hello-akka in 0.62s
+2020.10.21 15:08:23 INFO  disconnected: build server
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher2361548804834447762/bsp.socket'...
+Waiting for the bsp connection to come up...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher2361548804834447762/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher2361548804834447762/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.21 15:08:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher9149704198700358119/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher9149704198700358119/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/th/5xqv1p3x7xddt6xpfsj4kb_m0000gn/T/bsp-launcher9149704198700358119/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.21 15:08:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ronenkonfortes/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.10.21 15:08:24 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.21 15:08:23 INFO  time: indexed workspace in 0.42s
+2020.10.21 15:08:33 INFO  compiling hello-akka (1 scala source)
+2020.10.21 15:08:34 INFO  time: compiled hello-akka in 1.04s
+2020.10.21 15:09:32 INFO  compiling hello-akka (1 scala source)
+2020.10.21 15:09:33 INFO  time: compiled hello-akka in 1.03s
+2020.10.21 16:23:04 INFO  compiling hello-akka (1 scala source)
+2020.10.21 16:23:06 INFO  time: compiled hello-akka in 2.03s
+2020.10.21 16:26:32 INFO  compiling hello-akka (1 scala source)
+2020.10.21 16:26:34 INFO  time: compiled hello-akka in 2.02s
+2020.10.21 16:27:50 INFO  compiling hello-akka (1 scala source)
+2020.10.21 16:27:52 INFO  time: compiled hello-akka in 1.62s
+2020.10.21 16:28:06 INFO  compiling hello-akka (1 scala source)
+2020.10.21 16:28:07 INFO  time: compiled hello-akka in 1.14s
+2020.10.21 16:54:07 INFO  compiling hello-akka (1 scala source)
+2020.10.21 16:54:08 INFO  time: compiled hello-akka in 1.06s
+2020.10.21 16:54:14 INFO  compiling hello-akka (1 scala source)
+2020.10.21 16:54:14 INFO  time: compiled hello-akka in 0.85s
+2020.10.21 16:56:46 INFO  compiling hello-akka (3 scala sources)
+2020.10.21 16:56:48 INFO  time: compiled hello-akka in 1.74s
+2020.10.21 16:57:28 INFO  compiling hello-akka (1 scala source)
+2020.10.21 16:57:28 INFO  time: compiled hello-akka in 0.37s
+2020.10.21 16:57:36 INFO  compiling hello-akka (1 scala source)
+2020.10.21 16:57:36 INFO  time: compiled hello-akka in 0.86s
+2020.10.21 16:58:10 INFO  compiling hello-akka (1 scala source)
+2020.10.21 16:58:10 INFO  time: compiled hello-akka in 0.96s
+2020.10.21 17:02:16 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:02:16 INFO  time: compiled hello-akka in 0.74s
+2020.10.21 17:03:52 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/ex2/Ex2.scala:11: error: case classes must have a parameter list; try 'case class Statement()' or 'case object Statement'
+  
+  ^
+2020.10.21 17:03:53 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:03:53 INFO  time: compiled hello-akka in 0.16s
+2020.10.21 17:04:15 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/ex2/Ex2.scala:11: error: case classes must have a parameter list; try 'case class Statement()' or 'case object Statement'
+  
+  ^
+2020.10.21 17:04:15 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:04:15 INFO  time: compiled hello-akka in 0.26s
+2020.10.21 17:04:20 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/ex2/Ex2.scala:11: error: case classes must have a parameter list; try 'case class Statement()' or 'case object Statement'
+  
+  ^
+2020.10.21 17:04:20 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:04:20 INFO  time: compiled hello-akka in 0.11s
+2020.10.21 17:05:41 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:05:41 INFO  time: compiled hello-akka in 0.24s
+2020.10.21 17:05:52 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:05:52 INFO  time: compiled hello-akka in 0.35s
+2020.10.21 17:06:02 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:06:02 INFO  time: compiled hello-akka in 0.21s
+2020.10.21 17:06:19 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:06:19 INFO  time: compiled hello-akka in 0.16s
+2020.10.21 17:06:36 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:06:36 INFO  time: compiled hello-akka in 0.17s
+2020.10.21 17:06:39 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:06:39 INFO  time: compiled hello-akka in 0.29s
+2020.10.21 17:06:54 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:06:54 INFO  time: compiled hello-akka in 0.98s
+2020.10.21 17:08:07 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/ex2/Ex2.scala:16: error: case classes must have a parameter list; try 'case class Print()' or 'case object Print'
+
+^
+2020.10.21 17:08:07 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:08:07 INFO  time: compiled hello-akka in 0.19s
+2020.10.21 17:08:11 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/ex2/Ex2.scala:29: error: illegal start of simple pattern
+      }
+      ^
+2020.10.21 17:08:11 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:08:11 INFO  time: compiled hello-akka in 0.1s
+2020.10.21 17:09:37 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:09:37 INFO  time: compiled hello-akka in 0.17s
+2020.10.21 17:09:52 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:09:52 INFO  time: compiled hello-akka in 0.16s
+2020.10.21 17:10:04 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:10:04 INFO  time: compiled hello-akka in 0.96s
+2020.10.21 17:10:33 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:10:33 INFO  time: compiled hello-akka in 0.16s
+2020.10.21 17:10:37 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:10:39 INFO  time: compiled hello-akka in 1.73s
+2020.10.21 17:11:53 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:11:53 INFO  time: compiled hello-akka in 0.96s
+2020.10.21 17:13:01 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:13:02 INFO  time: compiled hello-akka in 1.01s
+2020.10.21 17:14:37 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:14:38 INFO  time: compiled hello-akka in 1.14s
+2020.10.21 17:14:56 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:14:57 INFO  time: compiled hello-akka in 1.05s
+2020.10.21 17:15:18 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:15:19 INFO  time: compiled hello-akka in 1.31s
+2020.10.21 17:18:25 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/ex2/Ex2.scala:26: error: ( expected but identifier found
+        if amount > 5000 {sender() ! Failure("can't ")}
+           ^
+2020.10.21 17:18:25 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:18:25 INFO  time: compiled hello-akka in 0.12s
+2020.10.21 17:18:32 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/ex2/Ex2.scala:26: error: ; expected but integer constant found
+        if (amount) > 5000 {sender() ! Failure("can't ")}
+                      ^
+2020.10.21 17:18:32 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:18:32 INFO  time: compiled hello-akka in 0.11s
+2020.10.21 17:18:39 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:18:39 INFO  time: compiled hello-akka in 0.2s
+2020.10.21 17:19:01 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:19:02 INFO  time: compiled hello-akka in 1.33s
+2020.10.21 17:19:26 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:19:27 INFO  time: compiled hello-akka in 1.25s
+2020.10.21 17:19:33 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:19:33 INFO  time: compiled hello-akka in 0.96s
+2020.10.21 17:19:41 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:19:42 INFO  time: compiled hello-akka in 1.25s
+2020.10.21 17:19:56 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:19:57 INFO  time: compiled hello-akka in 1.09s
+2020.10.21 17:20:31 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:20:32 INFO  time: compiled hello-akka in 1s
+2020.10.21 17:21:34 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:21:34 INFO  time: compiled hello-akka in 0.18s
+2020.10.21 17:21:39 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:21:39 INFO  time: compiled hello-akka in 0.18s
+2020.10.21 17:21:52 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:21:52 INFO  time: compiled hello-akka in 0.25s
+2020.10.21 17:21:57 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:21:57 INFO  time: compiled hello-akka in 0.24s
+2020.10.21 17:22:11 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:22:11 INFO  time: compiled hello-akka in 0.22s
+2020.10.21 17:22:18 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:22:19 INFO  time: compiled hello-akka in 1.5s
+2020.10.21 17:22:34 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:22:35 INFO  time: compiled hello-akka in 1.2s
+2020.10.21 17:22:39 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:22:39 INFO  time: compiled hello-akka in 0.17s
+2020.10.21 17:22:57 INFO  /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/ex2/Ex2.scala:48:9: stale bloop error: not found: value Print
+  atm ! Print(bankAccount)
+        ^^^^^
+2020.10.21 17:22:57 INFO  /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/ex2/Ex2.scala:48:9: stale bloop error: not found: value Print
+  atm ! Print(bankAccount)
+        ^^^^^
+2020.10.21 17:22:59 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:22:59 INFO  time: compiled hello-akka in 0.16s
+2020.10.21 17:23:07 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:23:09 INFO  time: compiled hello-akka in 1.47s
+2020.10.21 17:23:22 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:23:22 INFO  time: compiled hello-akka in 0.89s
+2020.10.21 17:23:37 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:23:37 INFO  time: compiled hello-akka in 0.18s
+2020.10.21 17:23:38 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:23:38 INFO  time: compiled hello-akka in 0.94s
+2020.10.21 17:24:56 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:24:56 INFO  time: compiled hello-akka in 0.16s
+2020.10.21 17:25:03 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:25:03 INFO  time: compiled hello-akka in 0.94s
+2020.10.21 17:29:22 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:29:22 INFO  time: compiled hello-akka in 0.24s
+2020.10.21 17:29:30 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:29:30 INFO  Deduplicating compilation of hello-akka from bsp client 'Metals 0.9.4' (since 2h 21m 6.33s)
+2020.10.21 17:29:30 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:29:30 INFO  time: compiled hello-akka in 0.11s
+2020.10.21 17:29:38 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:29:38 INFO  time: compiled hello-akka in 0.18s
+2020.10.21 17:29:40 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:29:40 INFO  time: compiled hello-akka in 0.17s
+2020.10.21 17:29:40 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:29:40 INFO  time: compiled hello-akka in 0.1s
+2020.10.21 17:29:50 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:29:50 INFO  time: compiled hello-akka in 0.15s
+2020.10.21 17:29:52 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:29:52 INFO  time: compiled hello-akka in 0.22s
+2020.10.21 17:29:54 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:29:54 INFO  time: compiled hello-akka in 0.25s
+2020.10.21 17:29:59 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:29:59 INFO  time: compiled hello-akka in 0.26s
+2020.10.21 17:30:15 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:30:15 INFO  time: compiled hello-akka in 0.26s
+2020.10.21 17:30:18 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:30:18 INFO  time: compiled hello-akka in 0.24s
+2020.10.21 17:30:20 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:30:21 INFO  time: compiled hello-akka in 1.31s
+2020.10.21 17:30:58 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:30:58 INFO  time: compiled hello-akka in 0.2s
+2020.10.21 17:31:04 INFO  compiling hello-akka (1 scala source)
+2020.10.21 17:31:06 INFO  time: compiled hello-akka in 1.66s
+2020.10.21 18:01:57 INFO  compiling hello-akka (1 scala source)
+Oct 21, 2020 6:01:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10957
+2020.10.21 18:01:59 INFO  time: compiled hello-akka in 2.01s
+2020.10.21 18:02:06 INFO  compiling hello-akka (4 scala sources)
+2020.10.21 18:02:08 INFO  time: compiled hello-akka in 1.84s
+2020.10.21 18:02:33 INFO  compiling hello-akka (4 scala sources)
+2020.10.21 18:02:35 INFO  time: compiled hello-akka in 2.11s
+2020.10.21 18:02:38 INFO  compiling hello-akka (4 scala sources)
+Oct 21, 2020 6:02:38 PM scala.meta.internal.metals.Docstrings indexSymbol
+SEVERE: file:///Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/ex2/Ex2.scala
+java.nio.file.NoSuchFileException: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/ex2/Ex2.scala
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.toInput(CommonMtagsEnrichments.scala:395)
+	at scala.meta.internal.metals.Docstrings.indexSymbolDefinition(Docstrings.scala:89)
+	at scala.meta.internal.metals.Docstrings.indexSymbol(Docstrings.scala:73)
+	at scala.meta.internal.metals.Docstrings.documentation(Docstrings.scala:38)
+	at scala.meta.internal.metals.MetalsSymbolSearch.documentation(MetalsSymbolSearch.scala:37)
+	at scala.meta.internal.pc.MetalsGlobal.symbolDocumentation(MetalsGlobal.scala:161)
+	at scala.meta.internal.pc.Signatures$SignaturePrinter.<init>(Signatures.scala:240)
+	at scala.meta.internal.pc.HoverProvider.toHover(HoverProvider.scala:199)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:82)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$hover$1(ScalaPresentationCompiler.scala:235)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withNonInterruptableCompiler$1(CompilerAccess.scala:125)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020.10.21 18:02:39 INFO  time: compiled hello-akka in 1.93s
+2020.10.21 18:02:48 INFO  compiling hello-akka (2 scala sources)
+2020.10.21 18:02:50 INFO  time: compiled hello-akka in 1.89s
+2020.10.21 18:03:02 INFO  compiling hello-akka (4 scala sources)
+2020.10.21 18:03:04 INFO  time: compiled hello-akka in 2.35s
+2020.10.21 18:03:09 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:03:10 INFO  time: compiled hello-akka in 1.72s
+2020.10.21 18:03:12 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:03:14 INFO  time: compiled hello-akka in 1.27s
+2020.10.21 18:08:26 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:08:28 INFO  time: compiled hello-akka in 2.2s
+2020.10.21 18:10:12 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:10:14 INFO  time: compiled hello-akka in 1.79s
+2020.10.21 18:10:30 INFO  compiling hello-akka (4 scala sources)
+2020.10.21 18:10:31 INFO  time: compiled hello-akka in 1.35s
+2020.10.21 18:10:35 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:10:36 INFO  time: compiled hello-akka in 1s
+2020.10.21 18:10:39 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:10:41 INFO  time: compiled hello-akka in 1.87s
+2020.10.21 18:10:43 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:10:44 INFO  time: compiled hello-akka in 1.2s
+2020.10.21 18:11:43 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:11:43 INFO  time: compiled hello-akka in 0.48s
+2020.10.21 18:13:31 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:13:31 INFO  time: compiled hello-akka in 0.81s
+2020.10.21 18:13:44 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:13:44 INFO  time: compiled hello-akka in 0.83s
+2020.10.21 18:15:24 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:15:25 INFO  time: compiled hello-akka in 1.15s
+2020.10.21 18:16:07 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:16:08 INFO  time: compiled hello-akka in 1.1s
+2020.10.21 18:16:36 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:16:36 INFO  time: compiled hello-akka in 0.29s
+2020.10.21 18:16:42 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:16:42 INFO  time: compiled hello-akka in 0.24s
+2020.10.21 18:16:47 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:16:48 INFO  time: compiled hello-akka in 1.14s
+2020.10.21 18:17:09 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:17:11 INFO  time: compiled hello-akka in 1.18s
+2020.10.21 18:17:17 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:17:18 INFO  time: compiled hello-akka in 1.23s
+2020.10.21 18:17:36 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:17:37 INFO  time: compiled hello-akka in 1.16s
+2020.10.21 18:17:40 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:17:40 INFO  time: compiled hello-akka in 0.27s
+2020.10.21 18:18:43 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/actorssection3/ChangingBehavior.scala:23: error: => expected but } found
+    }
+    ^
+2020.10.21 18:18:43 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:18:43 INFO  time: compiled hello-akka in 0.49s
+2020.10.21 18:19:04 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:19:04 INFO  time: compiled hello-akka in 0.28s
+2020.10.21 18:19:14 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:19:15 INFO  time: compiled hello-akka in 1.01s
+2020.10.21 18:20:47 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/actorssection3/ChangingBehavior.scala:40: error: } expected but end of file found
+
+^
+2020.10.21 18:20:47 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:20:47 INFO  time: compiled hello-akka in 0.1s
+2020.10.21 18:20:50 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/actorssection3/ChangingBehavior.scala:40: error: } expected but end of file found
+
+^
+2020.10.21 18:20:50 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:20:50 INFO  time: compiled hello-akka in 0.1s
+2020.10.21 18:21:25 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:21:25 INFO  time: compiled hello-akka in 0.9s
+2020.10.21 18:21:47 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:21:48 INFO  time: compiled hello-akka in 1.14s
+2020.10.21 18:22:22 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:22:22 INFO  time: compiled hello-akka in 0.13s
+2020.10.21 18:22:36 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:22:36 INFO  time: compiled hello-akka in 0.1s
+2020.10.21 18:22:36 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:22:36 INFO  time: compiled hello-akka in 74ms
+2020.10.21 18:22:53 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/actorssection3/ChangingBehavior.scala:31: error: objects may not have parameters
+    case object MomStart(kid: ActorRef)
+                        ^
+2020.10.21 18:22:53 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:22:53 INFO  time: compiled hello-akka in 93ms
+2020.10.21 18:22:59 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/actorssection3/ChangingBehavior.scala:31: error: objects may not have parameters
+    case object MomStart(kid: ActorRef)
+                        ^
+2020.10.21 18:22:59 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:22:59 INFO  time: compiled hello-akka in 0.1s
+2020.10.21 18:23:01 ERROR scalafmt: /Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/actorssection3/ChangingBehavior.scala:31: error: objects may not have parameters
+    case object MomStart(kid: ActorRef)
+                        ^
+2020.10.21 18:23:01 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:23:01 INFO  time: compiled hello-akka in 0.11s
+2020.10.21 18:23:11 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:23:11 INFO  time: compiled hello-akka in 0.15s
+2020.10.21 18:23:15 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:23:15 INFO  time: compiled hello-akka in 0.12s
+2020.10.21 18:23:20 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:23:20 INFO  time: compiled hello-akka in 0.12s
+2020.10.21 18:23:54 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:23:54 INFO  time: compiled hello-akka in 0.15s
+2020.10.21 18:23:55 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:23:55 INFO  time: compiled hello-akka in 0.12s
+2020.10.21 18:24:01 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:24:02 INFO  time: compiled hello-akka in 1.33s
+2020.10.21 18:25:08 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:25:08 INFO  time: compiled hello-akka in 0.14s
+2020.10.21 18:25:16 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:25:18 INFO  time: compiled hello-akka in 1.56s
+2020.10.21 18:25:23 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:25:23 INFO  time: compiled hello-akka in 1s
+2020.10.21 18:26:19 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:26:19 INFO  time: compiled hello-akka in 0.53s
+2020.10.21 18:26:33 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:26:34 INFO  time: compiled hello-akka in 1.46s
+Oct 21, 2020 6:32:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14056
+2020.10.21 18:37:27 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:37:29 INFO  time: compiled hello-akka in 1.87s
+2020.10.21 18:38:10 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:38:12 INFO  time: compiled hello-akka in 1.78s
+2020.10.21 18:38:28 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:38:30 INFO  time: compiled hello-akka in 1.45s
+2020.10.21 18:39:17 INFO  compiling hello-akka (1 scala source)
+2020.10.21 18:39:19 INFO  time: compiled hello-akka in 1.43s
