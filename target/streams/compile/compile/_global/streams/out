@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/actorssection3/ChangingBehavior.scala:54:36: not found: type Kid[0m
-[0m[[0m[31merror[0m] [0m[0m    val kid = system.actorOf(Props[Kid], "kid")[0m
-[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/ronenkonfortes/workspace/konfortes/hello-akka/src/main/scala/actorssection3/ChildActor.scala:21:50: not found: value child[0m
+[0m[[0m[31merror[0m] [0m[0m        println(s"[${self.path}] creating child $child")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
