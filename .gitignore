@@ -1,4 +1,4 @@
 .bloop/
 .metals/
 project/
-# target/
+target/
