@@ -1,4 +1,0 @@
-[debug] [hello-akka] Classpath dependencies List()
-[debug] [hello-akka] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'hello-akka' to '/Users/ronenkonfortes/workspace/konfortes/hello-akka/.bloop/hello-akka.json'
-[success] Generated .bloop/hello-akka.json
