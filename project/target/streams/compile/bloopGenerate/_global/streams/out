@@ -1,4 +1,4 @@
-[debug] [hello-akka-build] Classpath dependencies List()
-[debug] [hello-akka-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'hello-akka-build' to '/Users/ronenkonfortes/workspace/konfortes/hello-akka/project/.bloop/hello-akka-build.json'
-[success] Generated .bloop/hello-akka-build.json
+[0m[[0m[0mdebug[0m] [0m[0m[hello-akka-build] Classpath dependencies List()[0m
+[0m[[0m[0mdebug[0m] [0m[0m[hello-akka-build] Dependencies from configurations List()[0m
+[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'hello-akka-build' to '/Users/ronenkonfortes/workspace/konfortes/hello-akka/project/.bloop/hello-akka-build.json'[0m
+[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop/hello-akka-build.json[0m
